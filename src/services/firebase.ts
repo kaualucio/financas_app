@@ -4,12 +4,12 @@ import { getFirestore, collection, addDoc, getDocs, query, limit, orderBy, onSna
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBqgYnyn4MQYYzcdyKO6OCTvI3ynu2C6dU",
-  authDomain: "app-financas-5555b.firebaseapp.com",
-  projectId: "app-financas-5555b",
-  storageBucket: "app-financas-5555b.appspot.com",
-  messagingSenderId: "873928487544",
-  appId: "1:873928487544:web:c3185d4538e27516c1b38d"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 const app = initializeApp(firebaseConfig);

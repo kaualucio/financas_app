@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { query, collection, db, orderBy, limit, onSnapshot } from '../services/firebase'
 
 type DataContextProviderProps = {
